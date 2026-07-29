@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Form v2</title>
+
+<link rel="stylesheet" href="src/css/contact-form.css">
+</head>
+
+<body>
+
+    <main class="contact-form-container">
+
+        <header class="contact-form-header">
+            <h1>Request Electrical Service</h1>
+            <p>
+                Tell us about your project, and a member of our will follow up.
+            </p>
+        </header>
+   
+        <form class="contact-form">
+          
+    <div class="form-group">
+
+    <label for="full-name">Full Name</label>
+
+    <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        placeholder="Enter your full name"
+        required
+    >
+    </div>
+    
+    <div class="form-group">
+
+    <label for="email">Email Address</label>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+    >
+</div>
+
+<div class="form-group">
+    <label for="phone">Phone Number</label>
+
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="(407) 555-1234"
+    >
+</div>
+
+<div class="form-group">
+    <label for="company">Company Name</label>
+
+    <input
+        type="text"
+        id="company"
+        name="company"
+        placeholder="Enter your company name"
+    >
+</div>
+
+<div class="form-group">
+    <label for="service">Service Requested</label>
+
+    <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="service-call">Commercial Service Call</option>
+        <option value="lighting">Lighting Repair / Upgrade</option>
+        <option value="panel">Panel / Electrical Distribution</option>
+        <option value="tenant-buildout">Tenant Build-Out</option>
+        <option value="preventive-maintenance">Preventive Maintenance</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="project-details">Project Details</label>
+
+    <textarea
+        id="project-details"
+        name="project-details"
+        rows="6"
+        placeholder="Describe your project or electrical issue..."
+        required
+    ></textarea>
+</div>
+
+<div class="form-actions">
+    <button type="submit">
+        Submit Request
+    </button>
+</div>
+
+</form>
+
+    </main>
+
+    <script src="src/js/contact-form.js"></script>
+</body>
+</html>
