@@ -1,0 +1,63 @@
+:root {
+  /* ===========
+     COLORS
+  =========== */
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #64748b;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+  --white: #ffffff;
+  --black: #111827;
+
+  /* ===========
+     BACKGROUNDS
+  =========== */
+  --bg-light: #f8fafc;
+  --bg-dark: #0f172a;
+
+  /* ===========
+     BORDER RADIUS
+  =========== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* ===========
+     SHADOWS
+  =========== */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,.08);
+  --shadow-md: 0 8px 20px rgba(0,0,0,.12);
+  --shadow-lg: 0 24px 55px rgba(0, 0, 0, 0.16);  
+   
+  /* ===========
+     SPACING
+  =========== */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  /* ===========
+     TRANSITIONS
+  =========== */
+  --transition: .3s ease;
+
+/* Layout */
+--max: 1200px;
+
+/* Additional Colors */
+--primary-light: #d7e1f8;
+--ink: #222222;
+--blue: #2563eb;
+
+/* Form */
+--input-background: var(--white);
+--card-background: var(--white);
+
+/* Borders */
+--border-light: #e5e7eb;
+
+/* Focus */
+--focus-ring: rgba(37, 99, 235, 0.25);
+}
