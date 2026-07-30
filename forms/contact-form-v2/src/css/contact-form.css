@@ -87,3 +87,11 @@ textarea:focus-visible {
 .input-error {
     border-color: #d32f2f;
 }
+
+.success-message {
+    margin-top: 1rem;
+    color: #16a34a;
+    font-weight: 600;
+    text-align: center;
+
+}

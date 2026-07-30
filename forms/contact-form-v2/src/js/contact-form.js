@@ -1,4 +1,7 @@
 const contactForm = document.querySelector(".contact-form");
+const submitButton = document.querySelector("#submit-button");
+const successMessage = document.querySelector("#success-message");
+
 
 const fullNameInput = document.querySelector("#full-name");
 const emailInput = document.querySelector("#email");
@@ -6,7 +9,6 @@ const phoneInput = document.querySelector("#phone");
 const companyInput = document.querySelector("#company");
 const serviceInput = document.querySelector("#service");
 const projectDetailsInput = document.querySelector("#project-details");
-
 
 const fullNameError = document.querySelector("#full-name-error");
 const emailError = document.querySelector("#email-error");
@@ -46,6 +48,7 @@ function clearErrors() {
 
 function handleSubmit(event) {
     event.preventDefault(); 
+
     
     clearErrors();
 
@@ -87,6 +90,23 @@ if (!isRequired(data["project-details"])) {
     projectDetailsInput.classList.add("input-error");
     return;
 }
+
+submitButton.disabled = true;
+submitButton.textContent = "Submitting...";
+
+setTimeout(() => {
+    successMessage.textContent = "✅ Your request has been submitted successfully!";
+    
+    contactForm.reset();
+    
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Reuest";
+
+    setTimeout(() => {
+    successMessage.textContent = "";
+    }, 3000);
+
+}, 2000);
 
 console.log(data);
 }
