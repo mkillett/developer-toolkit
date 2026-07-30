@@ -1,0 +1,25 @@
+/* =========================
+   Page Layout
+========================= */
+
+body {
+    margin: 0;
+    padding: var(--spacing-xl);
+
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text);
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
